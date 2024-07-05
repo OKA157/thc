@@ -1,0 +1,10 @@
+### pnd
+create table pnd (algo TEXT, size INT, r INT, noerr INT, missed INT, detected INT, total INT);
+.mode csv
+.import 'data_pnd.csv' pnd
+.mode column
+.headers on
+select algo, size, sum(noerr) as noerr, sum(missed) missed, sum(detected) as detected, sum(total) as total, (cast(missed as float)/total) as pnd from pnd group by algo, size order by size, algo;
+
+### bench
+create table bench (algo TEXT, size INT, time_N REAL, time_Nr REAL, time_r REAL);

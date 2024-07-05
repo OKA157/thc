@@ -1,0 +1,3 @@
+Pre-prepartation steps:
+    1. install cryptodome:
+        pip install pycryptodome

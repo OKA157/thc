@@ -1,0 +1,2 @@
+### pnd
+for f in pnd_*txt ; do a=$(echo $f | sed 's/pnd_//;s/.txt//'); cat $f | tr -d '[a-z]' | sed 's/[\t ]\+/,/g;s/,/'$a',/'; done > data_pnd.csv

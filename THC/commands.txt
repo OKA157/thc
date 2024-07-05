@@ -1,0 +1,29 @@
+Update PIP:
+python -m pip install --upgrade pip
+
+
+
+Working directory: C:\Users\Shalnark\Documents\MEGAsync\UIB (Windows)\Cuarto Año\TFG\Documentación - Tomeu\THC\thc-master\thc\demo\evoting
+
+	Run server:
+
+	· python3 -m thc.demo.evoting.server (works)
+
+	Run client:
+	
+	* CREATE CAMPAIN:
+	· python3 -m thc.demo.evoting.client --new (readline lib issue)
+	solution: python -m pip install pyreadline
+
+	* CREATE VOTE TO CAMPAIGN:
+	· python3 -m thc.demo.evoting.client -s secret3.thc (where "secret3.thc" is the file of the campaign)
+	· Path: "THC/thc-master/thc/demo/evoting/secret.thc"
+
+Votes get stored as:
+	
+	· secretX.thc
+
+GET vote (postman):
+
+DpR8Xr_IBxOkMX4fxWGDIGptPYHxWHMYY_Q3cF1W9tc=
+

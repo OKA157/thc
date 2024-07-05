@@ -1,0 +1,15 @@
+
+##########################
+##                      ##
+##      PAILLIER        ##
+##                      ##
+##########################
+
+Partial homomorphic encryption allows for the performance of certain types of operations on encrypted data without fully decrypting it.
+Paillier Cryptosystem: This cryptosystem supports homomorphic addition, allowing for the addition of encrypted numbers without decrypting them.
+
+
+Pre-prepartation steps:
+    1. install phe:
+        pip install phe
+

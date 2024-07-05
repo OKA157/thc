@@ -1,0 +1,2 @@
+include thc/demo/evoting/README.md
+include thc/demo/evoting/init-db.sql
